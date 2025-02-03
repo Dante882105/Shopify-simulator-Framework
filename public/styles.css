@@ -1,0 +1,129 @@
+*{
+  list-style: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(24, 230, 68);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+@keyframes slide_out {
+  form{
+    transform: translatex(100px);
+  }
+  to{
+    transform: translate(-50px);
+  }
+}
+.ofert{
+  background-color: #782DFA;
+  height: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.ofert>div{
+  width: auto;
+  overflow-x: hidden;
+  text-wrap: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.message>p, .message>strong{
+  animation: slide_out 5s infinite;
+}
+
+header{
+  height: 40px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #1D1D1F;
+  color: white;
+}
+
+.header-info{
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+header strong{
+  font-size: 9px;
+}
+
+.dflex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.logo, .pay-methods, .list-products{
+  width: calc(100% / 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  justify-content: start !important;
+}
+
+.methods{
+  border: 1px solid gray;
+  border-radius: 20px;
+  width: auto;
+  height: 25px;
+  padding: 0 9px;
+}
+
+.methods>div{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.methods>div ul{
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.methods>div ul>li{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: orange;
+  margin: auto 6px;
+  cursor: pointer;
+}
+
+.list-products{
+  justify-content: end !important;
+}
+
+.list-products>div{
+  margin: auto 10px;
+  cursor: pointer;
+}
+
+#car{
+  height: 32px;
+  width: 60px;
+  background-color: #782DFA;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* Main styles */
+main{
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+}
